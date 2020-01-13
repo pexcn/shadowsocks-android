@@ -18,9 +18,9 @@ fetch_data() {
 gen_gfwlist_acl() {
   cd $TMP_DIR
   python $CUR_DIR/parse.py -i gfwlist.txt -f gfwlist.tmp
-  sed -i 's/.*\((^|\\.)blogspot\\.\).*/\(^|\\.)blogspot(\\.[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,2}$/' gfwlist.tmp
-  sed -i 's/.*\((^|\\.)google\\.\).*/\(^|\\.)google(\\.[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,2}$/' gfwlist.tmp
-  sed -i 's/.*\((^|\\.)googleapis\\.\).*/\(^|\\.)googleapis(\\.[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,2}$/' gfwlist.tmp
+  sed -i 's/.*\((?:^|\\.)blogspot\\.\).*/\(?:^|\\.)blogspot(\\.[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,2}$/' gfwlist.tmp
+  sed -i 's/.*\((?:^|\\.)google\\.\).*/\(?:^|\\.)google(\\.[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,2}$/' gfwlist.tmp
+  sed -i 's/.*\((?:^|\\.)googleapis\\.\).*/\(?:^|\\.)googleapis(\\.[a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?){1,2}$/' gfwlist.tmp
   uniq gfwlist.tmp > gfwlist.acl
   cd $CUR_DIR
 }
