@@ -2,6 +2,7 @@
 
 [bypass_list]
 ___CHNROUTE_PLACEHOLDER___
+___CHNROUTE_V6_PLACEHOLDER___
 
 [proxy_list]
 ___GFWLIST_PLACEHOLDER___
