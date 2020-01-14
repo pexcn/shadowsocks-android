@@ -503,7 +503,6 @@ class ProfilesFragment : ToolbarFragment(), Toolbar.OnMenuItemClickListener {
 
     override fun onDestroyView() {
         undoManager.flush()
-        nativeAd?.destroy()
         super.onDestroyView()
     }
 
