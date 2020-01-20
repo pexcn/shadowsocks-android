@@ -41,7 +41,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.github.shadowsocks.MainActivity
 import com.github.shadowsocks.R
 import com.github.shadowsocks.ToolbarFragment
-import com.github.shadowsocks.bg.BaseService
 import com.github.shadowsocks.plugin.AlertDialogFragment
 import com.github.shadowsocks.utils.readableMessage
 import com.github.shadowsocks.widget.ListHolderListener
@@ -207,8 +206,6 @@ class SubscriptionFragment : ToolbarFragment(), Toolbar.OnMenuItemClickListener 
         }
     }
 
-    private val isEnabled get() = (activity as MainActivity).state == BaseService.State.Stopped
-
     private val adapter by lazy { SubscriptionAdapter() }
     private lateinit var list: RecyclerView
     private var mode: ActionMode? = null
@@ -234,10 +231,7 @@ class SubscriptionFragment : ToolbarFragment(), Toolbar.OnMenuItemClickListener 
         list.adapter = adapter
         FastScrollerBuilder(list).useMd2Style().build()
         undoManager = UndoSnackbarManager(activity, adapter::undo)
-        ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.START or ItemTouchHelper.END) {
-            override fun getSwipeDirs(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder): Int =
-                    if (isEnabled) super.getSwipeDirs(recyclerView, viewHolder) else 0
-
+        ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.START) {
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) =
                     adapter.remove(viewHolder.adapterPosition)
 
