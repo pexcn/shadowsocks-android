@@ -7836,6 +7836,7 @@
 (?:^|\.)archive\.is$
 (?:^|\.)archive\.li$
 (?:^|\.)archive\.org$
+(?:^|\.)archive\.ph$
 (?:^|\.)archive\.today$
 (?:^|\.)archiveofourown\.com$
 (?:^|\.)archiveofourown\.org$
@@ -8806,6 +8807,7 @@
 (?:^|\.)dtic\.mil$
 (?:^|\.)dtwang\.org$
 (?:^|\.)duanzhihu\.com$
+(?:^|\.)dubox\.com$
 (?:^|\.)duck\.com$
 (?:^|\.)duckdns\.org$
 (?:^|\.)duckduckgo-owned-server\.yahoo\.net$
@@ -9384,6 +9386,7 @@
 (?:^|\.)git\.io$
 (?:^|\.)github\.com$
 (?:^|\.)github\.io$
+(?:^|\.)githubassets\.com$
 (?:^|\.)githubusercontent\.com$
 (?:^|\.)gizlen\.net$
 (?:^|\.)gjczz\.com$
@@ -9670,6 +9673,7 @@
 (?:^|\.)hkcnews\.com$
 (?:^|\.)hkcoc\.com$
 (?:^|\.)hkcoc\.weather\.com\.hk$
+(?:^|\.)hkctu\.org\.hk$
 (?:^|\.)hkdailynews\.com\.hk$
 (?:^|\.)hkday\.net$
 (?:^|\.)hkdf\.org$
@@ -10535,6 +10539,7 @@
 (?:^|\.)mswe1\.org$
 (?:^|\.)mthruf\.com$
 (?:^|\.)mtw\.tl$
+(?:^|\.)mubi\.com$
 (?:^|\.)muchosucko\.com$
 (?:^|\.)mullvad\.net$
 (?:^|\.)multiply\.com$
@@ -10871,6 +10876,7 @@
 (?:^|\.)openervpn\.in$
 (?:^|\.)openid\.net$
 (?:^|\.)openleaks\.org$
+(?:^|\.)opensource\.google$
 (?:^|\.)openvpn\.net$
 (?:^|\.)openvpn\.org$
 (?:^|\.)openwebster\.com$
@@ -11126,6 +11132,7 @@
 (?:^|\.)prozz\.net$
 (?:^|\.)psblog\.name$
 (?:^|\.)pscp\.tv$
+(?:^|\.)pshvpn\.com$
 (?:^|\.)psiphon\.ca$
 (?:^|\.)psiphon\.civisec\.org$
 (?:^|\.)psiphon3\.com$
@@ -11237,6 +11244,7 @@
 (?:^|\.)realitykings\.com$
 (?:^|\.)realraptalk\.com$
 (?:^|\.)realsexpass\.com$
+(?:^|\.)reason\.com$
 (?:^|\.)rebatesrule\.net$
 (?:^|\.)recordhistory\.org$
 (?:^|\.)recovery\.org\.tw$
@@ -11368,6 +11376,7 @@
 (?:^|\.)scmp\.com$
 (?:^|\.)scmpchinese\.com$
 (?:^|\.)scramble\.io$
+(?:^|\.)scratch\.mit\.edu$
 (?:^|\.)scribd\.com$
 (?:^|\.)scriptspot\.com$
 (?:^|\.)seapuff\.com$
@@ -11817,6 +11826,7 @@
 (?:^|\.)teeniefuck\.net$
 (?:^|\.)teensinasia\.com$
 (?:^|\.)telecomspace\.com$
+(?:^|\.)telegra\.ph$
 (?:^|\.)telegram\.dog$
 (?:^|\.)telegram\.me$
 (?:^|\.)telegram\.org$
@@ -12606,6 +12616,7 @@
 (?:^|\.)wingy\.site$
 (?:^|\.)winning11\.com$
 (?:^|\.)winwhispers\.info$
+(?:^|\.)wionews\.com$
 (?:^|\.)wire\.com$
 (?:^|\.)wiredbytes\.com$
 (?:^|\.)wiredpen\.com$
